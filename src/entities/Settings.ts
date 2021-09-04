@@ -1,5 +1,6 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
+
 @Entity('settings')
 export default class Settings {
     
@@ -8,6 +9,8 @@ export default class Settings {
 
     @Column()
     username: string;
+
+    @Column()
     chat: boolean;
 
     @UpdateDateColumn()
