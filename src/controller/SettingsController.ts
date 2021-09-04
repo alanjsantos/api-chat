@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import { getCustomRepository } from "typeorm";
-import SettingsRepository from "../repositories/SettingsRepository";
 import SettingsService from "../services/SettingsSerivce";
 
 export default class SettingsController {
